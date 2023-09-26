@@ -1,0 +1,169 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 2px;
+    padding: 2px;
+  
+}
+
+/* Apply a background image */
+body {
+    font-family: 'Arial', sans-serif;
+     background: url('https://images.pexels.com/photos/1366913/pexels-photo-1366913.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center; 
+  background-size: cover;
+  position: relative;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style the header with a gradient background */
+header {
+    background: linear-gradient(to bottom, #d851e1, #f5f906);
+    color: #f20707;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  color: white;
+  text-shadow: 2px 6px 8px #000000;
+  text-align: center;
+}
+h1{
+
+  height: 50px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;  
+}
+
+@keyframes example {
+  from {background-color: #e15bd0;}
+  to {background-color: #f3ef55;}
+}
+
+/* Style the navigation menu with hover effect */
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #03fcf8;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+nav a:hover {
+    color: #ffd700;
+  text-decoration: underline;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:350px;
+  height: 250px;
+}
+
+img:hover {
+  box-shadow: 0 0 4px 2px rgba(255, 0, 0, 0.8);
+   transform: scaleX(-1);
+}
+/* Style the container for blog content with a semi-transparent background */
+.container {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Style blog post titles with a hover effect */
+article h3 {
+    margin-top: 2px;
+    transition: color 0.2s ease-in-out;
+}
+
+article h3:hover {
+    color: #ff00dd;
+  
+}
+
+/* Style links within articles with an underline effect */
+article a {
+    text-decoration: none;
+    color: #ff00ea;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+article a:hover {
+    border-bottom: 2px solid #ff000d;
+  color: #09fbf7;
+}
+.container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .blog-post {
+            flex: 1;
+            margin: 10px;
+        }
+/* Style the footer with a background gradient */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, #bbca44, #1dbfac);
+    color: #d414e1;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Style the button */
+ button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #dd0e23; /* New background color on hover */
+}
+
+/* Optional: Add a shadow to the button */
+button:focus {
+  box-shadow: 0 0 15px rgba(0, 0, 19, 0.3);
+}
+
+
+
+/* Media queries for responsive design */
+@media (max-width: 100%) {
+  
+}
+@media (max-width: 100%) {
+    body {
+        background-image: url('background-image-small.jpg');
+    }
+}
